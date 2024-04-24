@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 60px;
+  background-color: #ccd1d1;
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed; */
+}
+.bars {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 100;
+  position: fixed;
+}
+.bars i:hover {
+  color: red;
+}
+.bar-left {
+  width: 20%;
+  height: 700px;
+  background-color: red;
+  /* position: absolute;   */
+  /* margin-top: 14px; */
+  left: 0;
+  display: none;
+  z-index: 1;
+  position: fixed;
+}
+form {
+  display: flex;
+  width: 40%;
+  height: 35px;
+  /* background-color: black; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-left: 30%;
+  border: 1px solid black;
+}
+form input {
+  position: absolute;
+  width: 88%;
+  /* margin-left: -25%; */
+  height: 35px;
+  /* border-radius: 6px; */
+  border: none;
+  background: none;
+  outline: none;
+  /* border: 1px solid black; */
+  background-color: #fff;
+  padding: 10px;
+  /* margin-top: 8px; */
+}
+form button {
+  position: absolute;
+  /* margin-top: 8px; */
+  width: 70px;
+  height: 35px;
+  right: 0;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #839192;
+  /* border: 1px solid black; */
+}
+form button:hover {
+  background-color: #e74c3c;
+  transition: 0.4s;
+}
+.buy ul {
+  display: flex;
+
+  list-style-type: none;
+}
+.buy {
+  position: relative;
+}
+.buy ul li {
+  font-size: 20px;
+  padding: 10px;
+}
+.buy ul li a {
+  text-decoration: none;
+  padding: 10px;
+  font-family: Noto sans;
+  color: #000;
+}
+.buy ul li a:hover {
+  color: red;
+}
+.box-menu {
+  width: 40%;
+  height: 40px;
+  /* background-color: firebrick; */
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name-menu {
+  width: auto;
+  height: auto;
+  background-color: #839192;
+  padding: 10px;
+  border-radius: 20px;
+}
+.name-menu ul {
+  list-style-type: none;
+}
+.name-menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-family: Noto sans;
+}
+.name-menu ul li a:hover {
+  color: #d52c16cd;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.spacil-pro {
+  width: 55%;
+  height: 120px;
+  background-color: #ccd1d1;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.spacil-pro h1 {
+  position: absolute;
+  margin-top: -2.5%;
+  font-size: 13px;
+  font-family: Noto sans;
+}
+.spacil-pro span {
+  color: #e74c3c;
+  text-decoration: underline #e74c3c;
+}
+.pro1 {
+  width: 20%;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+}
+.pro1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.pro-brfore {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  transition: 0.5s;
+}
+.pro-before::before {
+  content: "";
+  position: absolute;
+  /* background-color: #00000029; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  /* border: 1px solid black; */
+}
+.pro-brfore:hover {
+  transition: 0.8s;
+}
+.pro-before:hover::before {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.411),
+    rgba(250, 245, 245, 0.411)
+  );
+}
+.order {
+  text-align: center;
+  transition: 0.7s;
+  position: absolute;
+  left: 90%;
+  font-family: Overpass;
+  bottom: 20%;
+  transition: 0.5s;
+  opacity: 0;
+  width: 50%;
+  height: 50%;
+}
+.h1 {
+  text-align: center;
+  transition: 0.7s;
+  position: absolute;
+  left: 40%;
+  font-family: Overpass;
+  bottom: 5%;
+  transition: 0.5s;
+  opacity: 0;
+  height: auto;
+  overflow: hidden;
+}
+.pro1:hover .h1 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  opacity: 1;
+  transition: 0.6s;
+  color: #fff;
+}
+.pro1:hover .order {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  opacity: 1;
+  transition: 0.6s;
+  color: #fff;
+}
+.i {
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  opacity: 0;
+  color: #fff;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.pro1:hover .i {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  opacity: 1;
+  transition: 0.6s;
+  color: black;
+}
+.sea {
+  margin-top: 7%;
+  font-family: Overpass;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px;
+}
+.seafood {
+  width: 90%;
+  height: 850px;
+  /* background-color: #ccd1d1; */
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-shadow: 1px 1px 5px 0px black;
+  position: relative;
+}
+.lay {
+  position: relative;
+  width: 24%;
+  height: 47%;
+  background-color: #abb2b9;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  display: block;
+}
+.lay h2 {
+  position: absolute;
+  bottom: 35%;
+  left: 33%;
+  font-family: Overpass;
+  font-size: 18px;
+}
+.lay p {
+  position: absolute;
+  bottom: 18%;
+  left: 0;
+  text-align: justify;
+  padding: 10px;
+}
+.lay span {
+  position: absolute;
+  bottom: 13%;
+  left: 2%;
+  font-family: Overpass;
+  color: red;
+}
+.lay button {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 96%;
+  height: 25px;
+  font-family: Overpass;
+  background: none;
+  border: none;
+  background-repeat: no-repeat;
+  outline: none;
+  border: 2px inset black;
+}
+.lay button:hover {
+  background-color: rgb(215, 52, 52);
+  transition: 0.4s;
+}
+.lay:hover .layout {
+  transition: 0.6s;
+  transform: translateY(-180px);
+}
+.layout:hover {
+  transform: translateY(-200px);
+  transition: 0.6s;
+}
+.layout {
+  width: 100%;
+  height: 100%;
+  background-color: #abb2b9;
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  transition: 0.5s;
+  position: absolute;
+  display: block;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f3f4;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.steakfood {
+  margin-top: 50px;
+}
+.steak {
+  width: 100%;
+  height: 1000px;
+  background-color: aqua;
+}
+.end {
+  width: 20%;
+  height: 70px;
+  background-color: #e74c3c;
+  margin: auto;
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
+  margin-top: 2%;
+  position: relative;
+}
+.end ul {
+  list-style-type: none;
+}
+.end ul li a {
+  text-align: center;
+  font-size: 20px;
+  font-family: Overpass;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 22px;
+  margin-left: 100px;
+  text-decoration: none;
+  color: #000;
+}
+.end ul li a:hover {
+  text-decoration: underline black;
+}
+
+.mon {
+  width: 100%;
+  height: 70%;
+  margin-top: 15px;
+  background-color: #353433;
+}
+.box-end {
+  width: 90%;
+  height: 60%;
+  /* background-color: red; */
+  border-bottom: 2px solid gray;
+  margin: auto;
+  display: flex;
+}
+.right {
+  /* background-color: #ba4a00; */
+  width: 50%;
+  height: 100%;
+}
+.box-end h1 {
+  font-family: Overpass;
+  font-size: 20px;
+  padding-top: 50px;
+  color: #ccd1d1;
+}
+.box-end p {
+  font-family: Noto sans;
+  font-size: 12px;
+  color: #ccd1d1;
+  margin-top: 30px;
+}
+.Awsome {
+  width: 100%;
+  /* height: 50px; */
+  /* background-color: #000; */
+  margin-top: 50px;
+  display: flex;
+}
+.Awsome ul {
+  display: flex;
+
+  list-style-type: none;
+}
+.Awsome ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+.Awsome i:nth-child(1) {
+  margin-left: -19px;
+}
+.Awsome i:hover {
+  color: #707b7c;
+}
+.title-1 {
+  width: 25%;
+  height: 100%;
+  /* background-color: #ba4a00; */
+}
+.title-1 h1 {
+  font-family: Overpass;
+  font-size: 13px;
+  padding-top: 50px;
+  color: #ccd1d1;
+}
+.title-1 p {
+  font-size: 10px;
+  font-family: Noto sans;
+  margin-top: 10px;
+}
+.left {
+  width: 25%;
+  height: 100%;
+  /* background-color: red; */
+}
+.left h1 {
+  font-family: Overpass;
+  font-size: 13px;
+  padding-top: 50px;
+  color: #ccd1d1;
+}
+.left p {
+  font-size: 10px;
+  font-family: Noto sans;
+  margin-top: 10px;
+  color: #ccd1d1;
+}
+.mon h2 {
+  font-family: Overpass;
+  font-size: 13px;
+  padding-top: 50px;
+  color: #ccd1d1;
+  width: 90%;
+  margin: auto;
+}
+.mon .p12 {
+  font-size: 12px;
+  font-family: Noto sans;
+  width: 90%;
+  margin: auto;
+  color: #ccd1d1;
+  padding-top: 10px;
+}
